@@ -140,3 +140,24 @@ class Asinifi{
 
 print(Asinifi.x)
 Asinifi.method()
+//Enum
+enum KonserveBoyut {
+    
+    case Kucuk
+    case Orta
+    case Buyuk
+    
+}
+
+func ucretHesapla(boyut : KonserveBoyut, adet : Int){
+    switch boyut {
+    case .Kucuk:
+        print("Fiyat : \(adet*10) ₺")
+    case .Orta:
+        print("Fiyat : \(adet*20) ₺")
+    case .Buyuk:
+        print("Fiyat : \(adet*30) ₺")
+    }
+}
+
+ucretHesapla(boyut: .Orta, adet: 24)

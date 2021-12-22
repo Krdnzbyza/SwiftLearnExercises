@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nXW-3c-icV">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="navigation_example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Xi-bl-aAg">
+                                <rect key="frame" x="148" y="246" width="118" height="33"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Ana Sayfa">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="27"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgv-M3-enG">
+                                <rect key="frame" x="119" y="445" width="176" height="50"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="X4m-3w-hbD"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Sayfa A">
+                                            <attributes>
+                                                <font key="NSFont" size="21" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonAPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bLe-fO-UTu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6F8-2x-VDY">
+                                <rect key="frame" x="119" y="556" width="176" height="66"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="3oS-8K-GN4"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Sayfa X">
+                                            <attributes>
+                                                <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonXPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fdT-sX-Bzr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6F8-2x-VDY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="119" id="2zm-bi-OEU"/>
+                            <constraint firstItem="6F8-2x-VDY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D9j-sa-Jnv"/>
+                            <constraint firstItem="Cgv-M3-enG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c0D-8r-qZh"/>
+                            <constraint firstItem="4Xi-bl-aAg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dhC-gU-exS"/>
+                            <constraint firstItem="6F8-2x-VDY" firstAttribute="leading" secondItem="Cgv-M3-enG" secondAttribute="leading" id="hAL-VH-E4U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6F8-2x-VDY" secondAttribute="bottom" constant="240" id="ioX-gn-JZG"/>
+                            <constraint firstItem="Cgv-M3-enG" firstAttribute="top" secondItem="4Xi-bl-aAg" secondAttribute="bottom" constant="166" id="rB5-Ec-N1s"/>
+                            <constraint firstItem="4Xi-bl-aAg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="106" id="rHL-Aq-dIL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WaP-5M-yr8"/>
+                    <connections>
+                        <segue destination="HyZ-gm-Zwf" kind="show" identifier="yPageNavigation" id="Vyy-qV-jmb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939.13043478260875" y="65.625"/>
+        </scene>
+        <!--Navigator Screen ApageVC-->
+        <scene sceneID="oK6-7g-MFH">
+            <objects>
+                <viewController id="qvr-7Y-qx8" customClass="navigatorScreenApageVC" customModule="navigation_example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kb3-WT-ct3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9F-Qu-3Ld">
+                                <rect key="frame" x="132" y="408" width="150" height="80"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="WWK-O7-mf8"/>
+                                    <constraint firstAttribute="width" constant="150" id="kqh-w8-jCL"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="A Button">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonAPageScreen:" destination="qvr-7Y-qx8" eventType="touchUpInside" id="1oh-59-OFt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cz2-so-ILX">
+                                <rect key="frame" x="170" y="160" width="165" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="Nlq-wR-rON"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Page A">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name=".SFNS-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oqd-Ej-icv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cz2-so-ILX" firstAttribute="leading" secondItem="oqd-Ej-icv" secondAttribute="leading" constant="170" id="LKr-OE-fJC"/>
+                            <constraint firstItem="M9F-Qu-3Ld" firstAttribute="centerY" secondItem="kb3-WT-ct3" secondAttribute="centerY" id="RKo-ze-g5k"/>
+                            <constraint firstItem="Cz2-so-ILX" firstAttribute="top" secondItem="oqd-Ej-icv" secondAttribute="top" constant="116" id="RNq-dV-fP1"/>
+                            <constraint firstItem="M9F-Qu-3Ld" firstAttribute="centerX" secondItem="kb3-WT-ct3" secondAttribute="centerX" id="TWR-gC-f5S"/>
+                            <constraint firstItem="Cz2-so-ILX" firstAttribute="centerX" secondItem="kb3-WT-ct3" secondAttribute="centerX" id="kOk-GR-gTi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="34t-tU-2Np"/>
+                    <connections>
+                        <segue destination="Xdq-8n-9Ki" kind="show" id="Rfs-Jf-yuA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FS4-UQ-kHj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1968.1159420289857" y="-402.45535714285711"/>
+        </scene>
+        <!--Navigator ScreenB PageVC-->
+        <scene sceneID="xUN-6X-UXl">
+            <objects>
+                <viewController id="Xdq-8n-9Ki" customClass="NavigatorScreenBPageVC" customModule="navigation_example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oWN-gp-Df3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vx7-cR-ow8">
+                                <rect key="frame" x="144.5" y="400" width="125.5" height="42"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Button B">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonBPageScreen:" destination="Xdq-8n-9Ki" eventType="touchUpInside" id="eJh-50-cT3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kK9-Zi-wOS">
+                                <rect key="frame" x="164" y="105" width="86" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Tql-Ma-Q89"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Page B">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="30"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eP2-oH-JJe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vx7-cR-ow8" firstAttribute="centerY" secondItem="oWN-gp-Df3" secondAttribute="centerY" id="Qme-Zh-Rku"/>
+                            <constraint firstItem="kK9-Zi-wOS" firstAttribute="centerX" secondItem="oWN-gp-Df3" secondAttribute="centerX" id="YCp-v0-MM0"/>
+                            <constraint firstItem="kK9-Zi-wOS" firstAttribute="top" secondItem="eP2-oH-JJe" secondAttribute="top" constant="105" id="q4U-X0-MBJ"/>
+                            <constraint firstItem="Vx7-cR-ow8" firstAttribute="centerX" secondItem="oWN-gp-Df3" secondAttribute="centerX" id="x1i-Gh-8g8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vt9-Zb-48Q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JMl-hj-ZVj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3163.7681159420295" y="-398.4375"/>
+        </scene>
+        <!--Nagivator ScreenVC-->
+        <scene sceneID="RGU-ZO-E5u">
+            <objects>
+                <viewController id="odx-Ce-zLS" customClass="NagivatorScreenVC" customModule="navigation_example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7g7-WL-zZU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHh-jZ-hIK">
+                                <rect key="frame" x="155.5" y="205" width="103" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JlI-94-pLg">
+                                <rect key="frame" x="151.5" y="429" width="111.5" height="38.5"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Button X">
+                                            <attributes>
+                                                <font key="NSFont" size="21" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonXPageScreen:" destination="odx-Ce-zLS" eventType="touchUpInside" id="EWd-Bg-kGP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6aT-rK-Cgp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JlI-94-pLg" firstAttribute="centerX" secondItem="7g7-WL-zZU" secondAttribute="centerX" id="31L-fF-QB0"/>
+                            <constraint firstItem="JlI-94-pLg" firstAttribute="centerY" secondItem="7g7-WL-zZU" secondAttribute="centerY" id="ULh-Sb-Abd"/>
+                            <constraint firstItem="bHh-jZ-hIK" firstAttribute="centerX" secondItem="7g7-WL-zZU" secondAttribute="centerX" id="m1f-fl-vSc"/>
+                            <constraint firstItem="bHh-jZ-hIK" firstAttribute="top" secondItem="6aT-rK-Cgp" secondAttribute="top" constant="161" id="qgj-am-jhu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A9d-HT-dMr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1968.1159420289857" y="322.76785714285711"/>
+        </scene>
+        <!--Navigator ScreenY PageVC-->
+        <scene sceneID="yCA-sw-Hd1">
+            <objects>
+                <viewController id="HyZ-gm-Zwf" customClass="NavigatorScreenYPageVC" customModule="navigation_example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lo3-bs-X88">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coi-H2-Kmz">
+                                <rect key="frame" x="149" y="286" width="116" height="45"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Page Y">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="40"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GN0-h3-oBT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="coi-H2-Kmz" firstAttribute="top" secondItem="GN0-h3-oBT" secondAttribute="top" constant="146" id="HDi-FQ-ICv"/>
+                            <constraint firstItem="coi-H2-Kmz" firstAttribute="centerX" secondItem="Lo3-bs-X88" secondAttribute="centerX" id="n87-ZO-Mqb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="goi-xk-I4k"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v18-av-yHZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3188.4057971014495" y="356.91964285714283"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DcD-5x-rCW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nXW-3c-icV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="WB6-AE-Kvq">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cYO-Ij-jra"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eq4-zu-eoS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

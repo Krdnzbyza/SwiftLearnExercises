@@ -82,3 +82,27 @@ var (kod , mesaj) = hataMesaji
 print(kod)
 print(mesaj)
 
+
+class MilkPurchase {
+    let cartons: Int
+    let paid: Int
+
+    var change = 0
+    var price = 0
+
+    init(cartonCount: Int, moneyPaid: Int) {
+        cartons = cartonCount
+        paid = moneyPaid
+        price = cartonCount * 2
+        change = paid - price
+    }
+
+}
+
+func purchaseMilk(howManyMilkCartons : Int, howMuchMoneyPaid : Int) -> MilkPurchase {
+    // Other logic perhaps
+    return MilkPurchase(cartonCount: howManyMilkCartons, moneyPaid: howMuchMoneyPaid)
+}
+
+let purchaseRecord = purchaseMilk(howManyMilkCartons: 3, howMuchMoneyPaid: 10)
+print(purchaseRecord.change)

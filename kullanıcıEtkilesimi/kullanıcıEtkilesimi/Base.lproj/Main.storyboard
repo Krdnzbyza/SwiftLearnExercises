@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="kullanıcıEtkilesimi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1X-O4-g4q">
+                                <rect key="frame" x="137" y="160" width="140" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Alert Göster"/>
+                                <connections>
+                                    <action selector="alertGöster:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5QD-OW-wqN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3z-IP-XwS">
+                                <rect key="frame" x="130" y="291" width="154" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Action Sheet Göster"/>
+                                <connections>
+                                    <action selector="actionSheetGöster:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j2G-36-NvW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Utb-Sk-dyC">
+                                <rect key="frame" x="139" y="422" width="136" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Özel Alert Göster"/>
+                                <connections>
+                                    <action selector="özelAlertGöster:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zDQ-JD-a7w"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Utb-Sk-dyC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0O4-Av-VQe"/>
+                            <constraint firstItem="a3z-IP-XwS" firstAttribute="top" secondItem="S1X-O4-g4q" secondAttribute="bottom" constant="100" id="4wH-QH-ecA"/>
+                            <constraint firstItem="S1X-O4-g4q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="NsQ-ej-icz"/>
+                            <constraint firstItem="Utb-Sk-dyC" firstAttribute="top" secondItem="a3z-IP-XwS" secondAttribute="bottom" constant="100" id="gIq-Ba-mTA"/>
+                            <constraint firstItem="S1X-O4-g4q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="116" id="kb3-Sm-u7J"/>
+                            <constraint firstItem="a3z-IP-XwS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kka-JA-rMp"/>
+                            <constraint firstItem="Utb-Sk-dyC" firstAttribute="top" secondItem="a3z-IP-XwS" secondAttribute="bottom" constant="100" id="l2u-Rv-Yth"/>
+                            <constraint firstItem="S1X-O4-g4q" firstAttribute="centerX" secondItem="a3z-IP-XwS" secondAttribute="centerX" id="t1F-rT-i4n"/>
+                            <constraint firstItem="Utb-Sk-dyC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vdM-HY-gly"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="66"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

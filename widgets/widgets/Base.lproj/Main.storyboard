@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="widgets" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfg-3H-Btr">
+                                <rect key="frame" x="186" y="44" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Veri giriniz" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gtR-We-FNU">
+                                <rect key="frame" x="159" y="65" width="96" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGW-R5-njH">
+                                <rect key="frame" x="173.5" y="99" width="67" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zTL-gi-ZZf">
+                                <rect key="frame" x="76" y="130" width="262" height="174"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gtR-We-FNU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Av-OO-OKM"/>
+                            <constraint firstItem="dfg-3H-Btr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="58Y-dR-fjV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zTL-gi-ZZf" secondAttribute="bottom" constant="558" id="E0p-Ii-cET"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gtR-We-FNU" secondAttribute="trailing" id="Ir6-cg-s4d"/>
+                            <constraint firstItem="zTL-gi-ZZf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LMq-Eq-lPg"/>
+                            <constraint firstItem="dfg-3H-Btr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ozc-6c-0nv"/>
+                            <constraint firstItem="gtR-We-FNU" firstAttribute="top" secondItem="dfg-3H-Btr" secondAttribute="bottom" id="X87-gA-a2g"/>
+                            <constraint firstItem="zTL-gi-ZZf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="YFc-9l-cNd"/>
+                            <constraint firstItem="mGW-R5-njH" firstAttribute="top" secondItem="gtR-We-FNU" secondAttribute="bottom" id="abh-Li-Kf8"/>
+                            <constraint firstItem="gtR-We-FNU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pau-oy-aIZ"/>
+                            <constraint firstItem="zTL-gi-ZZf" firstAttribute="top" secondItem="mGW-R5-njH" secondAttribute="bottom" id="tcv-wO-H39"/>
+                            <constraint firstItem="mGW-R5-njH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xxT-Sm-DUk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
